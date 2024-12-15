@@ -1,0 +1,84 @@
+/* .hero-banner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: #fff;
+    text-align: center;
+  }*/
+  
+  
+  
+  @keyframes slideBackground {
+    0% {
+      background-image: url('../assets/images/hero-banner1.jpeg');
+    }
+    20% {
+      background-image: url('../assets/images/hero-banner.jpg'); /* Change to 2nd image */
+    }
+    40% {
+      background-image: url('../assets/images/hero-banner2.jpeg'); /* Change to 3rd image */
+    }
+    60% {
+      background-image: url('../assets/images/hero-banner1.jpeg'); /* Change to 4th image */
+    }
+    80% {
+      background-image: url('../assets/images/hero-banner1.jpeg'); /* Change to 5th image */
+    }
+    100% {
+      background-image: url('../assets/images/hero-banner1.jpeg'); /* Back to the 1st image */
+    }
+  }
+  
+  .hero-banner {
+    position: relative;
+    height: 100vh;  /* Full screen height */
+    background-size: cover;  /* Ensure the background covers the whole area */
+    background-position: center;  /* Center the background image */
+    animation: slideBackground 25s infinite;  /* Animation for sliding effect */
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Georgia', serif; /* Elegant font */
+    font-weight: bold; /* Make text bold for emphasis */
+  }
+  
+  .hero-content h1 {
+    font-size: 5rem;  /* Increase the font size */
+    letter-spacing: 2px;  /* Add some spacing between letters */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);  /* Add subtle text shadow for depth */
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;  /* Slightly larger font size for the description */
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-style: italic;  /* Make the text a little more stylish */
+  }
+  
+  .cta-btn {
+    padding: 15px 30px;  /* Increase padding for a more substantial button */
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;  /* Make the text bold */
+    border: none;
+    border-radius: 30px;  /* Rounded corners for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);  /* Slightly increase size when hovered */
+  }
+  
+  /* Optional: Adding smooth background slide animation */
+  
